@@ -1,0 +1,80 @@
+.list1, .list2, .list3, .list4 {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.list1 li, .list2 li, .list3 li, .list4 li {
+  z-index: 2;
+}
+.list1 a, .list2 a, .list3 a, .list4 a {
+  font-size: 18px;
+  display: block;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.list1 .hoverJs_Element {
+  background-color: #ba8943;
+  transition: all 0.5s;
+  height: 3px !important;
+  top: 100% !important;
+}
+
+.list3 .hoverJs_Element {
+  border: 2px solid #ba8943;
+  transition: all 0.5s;
+  border-radius: 10rem;
+}
+.list3 .hoverJs_Element.the_parent_leave {
+  background-color: #ba8943;
+}
+
+.list2 .hoverJs_Element {
+  transition: all 0.5s;
+  background-color: transparent;
+}
+.list2 .hoverJs_Element::after, .list2 .hoverJs_Element::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ba8943;
+  position: absolute;
+  transition: all 0.5s;
+}
+.list2 .hoverJs_Element::after {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+.list2 .hoverJs_Element::before {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+.list2 .hoverJs_Element.the_parent_leave::after, .list2 .hoverJs_Element.the_parent_leave::before {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.list4 .hoverJs_Element {
+  transition: all 0.5s;
+}
+.list4 .hoverJs_Element::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #ba8943;
+  transition: all 0.5s;
+}
+.list4 .hoverJs_Element.the_parent_leave::after {
+  height: 2px;
+}
+
+/*# sourceMappingURL=demo.css.map */

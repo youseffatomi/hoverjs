@@ -1,0 +1,23 @@
+@import "index.css";
+@import "demo.css";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #222831;
+  color: white;
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
